@@ -1,0 +1,39 @@
+/* Generales */
+
+
+/* SMALL (576px) */
+
+
+/* MEDIUM (768px) */
+
+@media (max-width:850px){
+    main{
+        margin-top: 50px;
+    }
+    .back{
+        width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .back div{
+        margin: 0;
+        position: absolute;
+    }
+    /* Formularios */
+    .login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+    .login-register form{
+        position: relative;
+    }
+}
+
+/* LARGE (992px) */
+
+
+
+
+/* X-LARGE (1200px) */

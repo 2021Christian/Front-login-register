@@ -1,0 +1,144 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Globales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto';
+
+    /* Colores */
+    --bg-blue-light: rgba(000, 100, 200, 0.3);
+    --blue: #46a2fd;
+    --bg-inputs: #f3f3f3;
+
+ 
+
+}
+
+/* Estructura */
+body{
+    background-image: url(../assets/img/mountain-2158661_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+
+}
+
+.all{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.back{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    background-color: var(--bg-blue-light);
+}
+
+.back div{
+    margin: 100px 40px;
+    color: #fff;
+    /* Animacion */
+    transition: all 500ms;
+}
+
+.back div p,
+.back div button{
+    margin-top: 30px;
+}
+
+.back div h3{
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.back button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    font-size: .9rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    /* Animacion */
+    transition: all 300ms;
+}
+
+.back button:hover{
+    background: #fff;
+    color: var(--blue);
+}
+
+/* Formularios */
+.login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+    /* Animacion */
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: #fff;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.login-register form h2{
+    font-size: 1.9rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--blue);
+}
+
+.login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: var(--bg-inputs);
+    font-size: 1rem;
+    outline: none;
+}
+
+.login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: .9rem;
+    background: var(--blue);
+    color: #fff;
+    outline: none;
+}
+
+.form-login{
+    opacity: 1;
+    display: block;
+}
+
+.form-register{
+    display: none;
+}
