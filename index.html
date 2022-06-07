@@ -33,17 +33,35 @@
         
             <form action="" class="form-login">
                 <h2>Iniciar Sesion</h2>
-                <input type="text" placeholder="ejemplo@email.com" name="" id="">
-                <input type="password" placeholder="contraseña" name="" id="">
-                <button>Entrar</button>
+                <div class="field">
+                    <input type="email" placeholder="ejemplo@email.com" id="email">
+                    <span class="err"></span>
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="contraseña" id="pass">
+                    <span class="err"></span>
+                </div>
+            <button>Entrar</button>
             </form>
 
             <form action="" class="form-register">
                 <h2>Registrarse</h2>
-                <input type="text" placeholder="nombre y apellido" name="" id="">
-                <input type="text" placeholder="ejemplo@email.com" name="" id="">
-                <input type="text" placeholder="usuario" name="" id="">
-                <input type="password" placeholder="contraseña" name="" id="">
+                <div class="field">
+                    <input type="text" placeholder="nombre" id="fName">
+                    <span class="err"></span>
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="apellido" id="lName">
+                    <span class="err"></span>
+                </div>
+                <div class="field">
+                    <input type="email" placeholder="ejemplo@email.com" id="regEmail">
+                    <span class="err"></span>
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="contraseña" id="regPass">
+                    <span class="err"></span>
+                </div>
                 <button>Registrarse</button>
             </form>
         
@@ -52,5 +70,6 @@
     </main>
 
     <script src="js/script.js"></script>
+    <script src="js/validation.js"></script>
 </body>
 </html>

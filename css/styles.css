@@ -142,3 +142,10 @@ main{
 .form-register{
     display: none;
 }
+
+.err{
+    color: #f33;
+    font-size: .8rem;
+    font-style: italic;
+    
+}
